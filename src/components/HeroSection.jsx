@@ -38,7 +38,7 @@ const Nav = () => (
   <div className="nav">
     <div className="nav_wrapper">
       <div className="navLogo">
-        <span>WADM</span>
+        <img src="./j-removebg-preview.png" alt="" style={{ width: '50px', height: '50px' }} />
       </div>
       <div className="nav_extra">
         <span>Case Study</span>
@@ -78,23 +78,21 @@ const SectionCol = () => (
 
 const SectionColInfo = ({ percentage }) => (
   <div className="section_col">
-    <div className="section_col_container">
+    <div className="section_col_container1">
       <div className="section_col_heading">
-        <h1>Larose</h1>
+        <h1>Fine Architecture</h1>
       </div>
       <div className="section_col_description">
         <div className="section_col_info">
           <span>
             This inspiring architectural project showcases modern design principles. Explore the innovative use of light and space through stunning visuals.
           </span>
-        </div>
-        <ul className="section_col_role">
+        <ul className="section_col_role" style={{ paddingTop: '1rem', paddingLeft: '1rem' }}>
           <li>Architecture</li>
           <li>Interior Design</li>
         </ul>
-        <ul className="section_col_awards">
-          <li>SOTD - Awwwards</li>
-        </ul>
+        </div>
+        
       </div>
       <div className="section_col_link">
         <h2>View Project</h2>
