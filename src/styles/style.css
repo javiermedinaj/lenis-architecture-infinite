@@ -167,7 +167,9 @@ html.lenis {
   html {
     font-size: calc(100vw / 1024 * 10);
   }
-
+  body {
+    overflow-y: scroll;
+  }
   h1 {
     font-size: 4rem;
     padding-top: 10rem;
@@ -185,6 +187,7 @@ html.lenis {
   .section_col {
     width: 100%;
     padding: 1.6rem;
+    position: relative;
   }
 
   .section_col_container {
