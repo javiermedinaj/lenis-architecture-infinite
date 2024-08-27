@@ -17,13 +17,14 @@ body {
   font-family: "sans-serif";
   background-color: var(--primary);
   color: var(--secondary);
+  overflow-y: hidden; /* Asegura que Lenis controle el scroll */
 }
 ::-webkit-scrollbar {
   display: none;
 }
 
 h1 {
-padding-top: 10rem;
+  padding-top: 10rem;
   font-size: 4rem;
   text-transform: uppercase;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -42,6 +43,7 @@ li {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
+/* Lenis CSS Settings */
 html.lenis {
   height: auto;
 }
@@ -129,7 +131,6 @@ html.lenis {
 .section_col_awards::before {
   font-size: 1.6rem;
   display: block;
-
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 .section_col_info::before {
@@ -137,7 +138,6 @@ html.lenis {
   padding-bottom: 1.6rem;
 }
 .section_col_role::before {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   content: "Role";
 }
 .section_col_awards::before {
@@ -168,49 +168,45 @@ html.lenis {
     font-size: calc(100vw / 1024 * 10);
   }
   body {
-    overflow-y: scroll;
+    overflow-y: hidden;
   }
   h1 {
     font-size: 4rem;
     padding-top: 10rem;
   }
-
   h2 {
     font-size: 2.4rem;
   }
-
   .section_wrapper {
     flex-direction: column;
     gap: 1.6rem;
   }
-
   .section_col {
     width: 100%;
     padding: 1.6rem;
     position: relative;
   }
-
   .section_col_container {
     gap: 1.6rem;
     flex-direction: column;
   }
-  .section_col_container1 {
-    gap: 1.6rem;
-    flex-direction: row;
-  }
-
-  .section_col_description {
-    gap: 1.6rem;
-    order: 1;
-  }
-
-  .section_col_role {
-    order: 1;
-  }
-
   .section_col_container_image {
-    order: 2;
     width: 100%;
     height: auto;
+  }
+  .section_col_link {
+    position: absolute;
+
+    bottom: 20rem;
+    cursor: pointer;
+    margin-left: 2.6rem;
+  }
+  .section_col_scroll {
+    position: absolute;
+
+    cursor: pointer;
+    bottom: 20rem;
+    margin-left: 2.6rem;
+    margin-top: 1em;
   }
 }
